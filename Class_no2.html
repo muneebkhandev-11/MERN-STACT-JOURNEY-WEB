@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        color: blue;
+        padding: 10px;
+        /* border: 1px solid black; */
+      }
+      /* Type selector */
+      h1 {
+        color: aqua;
+      }
+      p {
+        color: black;
+      }
+      /* class selector */
+      .moneeb {
+        color: brown;
+      }
+
+      /* id selector */
+      #khan {
+        color: chocolate;
+      }
+      /* child selector */
+       
+      div > strong { 
+        color: rgb(55, 139, 19);
+      }
+      /* decendant selector */
+
+
+      /* adjecent sibling selector */
+    </style>
+  </head>
+  <body>
+    <!-- 1- universal selector =     (sab se kam parioratory )  
+
+    2- type selector      =     (universal selector se ziada hez)
+
+    3- class selector     =     (type selector se ziada parioratory)
+
+    4- id selector        =     (id selector type se ziada hey)
+
+    5- child selector     =     (id or class se kam parioratory hey)
+    
+    6- decendant selector =     ()
+
+    7- adjecent sibling selector = (adjecent sibling selector use hota hey kise parent ke andar ke element ko select karne ke liye agar hum ne parent per apply kiya to child tag per khud ba khud apply ho jayega) -->
+
+    <h1>WELCOME TO CSS!</h1>
+
+    <p class="moneeb" id="khan">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis
+      praesentium voluptates accusamus nam sit unde aperiam magnam, cum pariatur
+      omnis vero hic minus voluptas distinctio nobis quia velit quibusdam!
+    </p>
+
+    <div>
+      <strong id="khan"> Lorem. </strong>
+    </div>
+    <br />
+    <form action="">
+      <label for="">Name:</label>
+      <input type="text" name="" id="" />
+    </form>
+  </body>
+</html>

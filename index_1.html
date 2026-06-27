@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* last rule hum apply hota hai , agar multiple rules same element ke liye apply ho rahe hain to last rule apply hoga. isliye hum css me last rule ko zyada importance dete hain. */
+      
+      /* last rules */
+      h1 {
+        color: black;
+      }
+      h1 {
+        color: brown;
+      }
+      h1 {
+        color: aqua;
+      }
+
+      /* id selector , class selector , element selector */
+      /* !important use to make the rule more important than other rules */
+      /* 
+      h1 {
+        color: gray;
+      }
+      #KHAN {
+        color: blue;
+      }
+      .MONEEB {
+        color: red !important;
+      } */
+
+      /* inheritance is the process by which some properties are passed from parent elements to their children. For example, if you set the color property on a parent element, all of its child elements will inherit that color unless they have their own color property defined. */
+
+      .MONEEB {
+        color: green;
+        font-size: 16px;
+        border: 1px solid rgb(0, 116, 10);
+      }
+      p {
+        color: red;
+
+        border: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="KHAN" class="MONEEB">CSS RULES</h1>
+    <div class="MONEEB">
+      <p>This is a paragraph.</p>
+      <div>this is div tag.</div>
+    </div>
+  </body>
+</html>
