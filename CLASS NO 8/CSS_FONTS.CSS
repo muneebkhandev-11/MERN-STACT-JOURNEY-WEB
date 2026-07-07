@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+.para {
+  font-size: 21px;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: Stylish;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+
+
