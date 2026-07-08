@@ -1,0 +1,32 @@
+.descriptionn {
+  margin-top: 15px;
+  text-align: center;
+}
+/* styles.css file ke andar */
+b {
+  color: orange;
+  font-weight: bold;
+  text-transform: uppercase; /* Saare bold words capital ho jayenge */
+}
+.company-name {
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+.image-of-web {
+  /* border: solid; */
+  border: 3px solid aliceblue;
+  width: 170px;
+  height: 170px;
+  background-image: url(profile_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 92px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 20px;
+}
+.image-of-web:hover {
+  /* box-shadow: 5px 5px 5px 5px white; */
+  transform: scale(1.1); /* Isse picture 10% thodi badi (zoom in) ho jayegi */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Niche ek pyari si shadow aa jayegi */
+  cursor: pointer; /* Mouse ka pointer haath (hand) ke nishan me badal jayega */
+}
