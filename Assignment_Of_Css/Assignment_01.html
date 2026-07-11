@@ -17,14 +17,59 @@
         /* text-align: center; */
         padding-inline: 1.5;
       }
+      .navbar {
+        border-bottom: 1px solid;
+        padding: 10px 0;
+        height: 30px;
+        width: 400px;
+        border-radius: 10px;
+        margin-left: auto;
+      }
+      .navbar_1 {
+        list-style: none;
+        width: fit-content;
+        margin: auto;
+      }
+      li {
+        border: 2px solid;
+        padding: 5px 3px;
+        display: inline-block;
+        border-radius: 10px;
+        transition: 0.3s ease;
+      }
+      li > a {
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+      }
+
+      li:hover {
+        color: burlywood;
+        background-color: aqua;
+        box-shadow: black;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
     <div class="company-banner">
       <!-- Company Name -->
       <h1 class="company-name">Saylani IT Mass Training(SMIT)</h1>
+      <header>
+        <div>
+          <div class="navbar">
+            <ul class="navbar_1">
+              <li><a href="#About">About</a></li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Section">Section</a></li>
+              <li><a href="#Contact"></a>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </header>
       <!-- Browser image -->
-      <div class="image-of-web"></div>
+      <div class="image-of-web Home"></div>
       <h2
         style="
           border: 1px solid;
@@ -41,13 +86,13 @@
       >
         Welcome To Our Website!
       </h2>
-      <p class="descriptionn">
+      <p class="descriptionn About">
         We provide software solutions for businesses.Our mission is to create
         simple and useful applications.
       </p>
     </div>
 
-    <p class="para">
+    <p class="para Section">
       As a junior frontend developer, my first assignment is to design a clean
       and professional company banner page using <b>HTML</b> and
       <b>CSS</b>.Thprimary objective of this task is to demonstrate a solid
