@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* .section {
+        width: 200px;
+        height: 200px;
+        border: 1px;
+        position: absolute;
+      }
+      .section_1 {
+        background: red;
+        top: 50px;
+        z-index: 1;
+      }
+      .section_2 {
+        background: rgb(242, 15, 181);
+        top: 50px;
+      }
+      .section_3 {
+        background: rgb(12, 52, 196);
+      }
+      .section_4 {
+        background: rgb(25, 226, 7);
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+      }
+      .section_5 {
+        background: rgb(26, 7, 7);
+        top: 50px;
+        left: 50px;
+      } */
+      .product_card {
+        border: 1px solid;
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+        position: relative;
+      }
+      .product_card >img{
+        width: 100%;
+        height: 250px;
+        border-radius:10px 10px 0px 0px;
+      }
+      .detail{
+        padding: 8px;
+      }
+      button{
+        width: 100%;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 0px 10px 0;
+      }
+      #heart{
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top:10px;
+        right:15px;
+        border-radius: 12px;
+
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="section_1 section"></div>
+    <div class="section_2 section"></div>
+    <div class="section_3 section"></div>
+    <div class="section_4 section"></div>
+    <div class="section_5 section"></div> -->
+    <div class="product_card">
+      <img src="../Assignment_Of_Css/Hoodie.png" alt="" />
+      <img id="heart"  src="download.png" alt="">
+
+      <div class="detail">
+        <h1>Product title</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>Add to Card</button>
+      </div>
+    </div>
+  </body>
+</html>
