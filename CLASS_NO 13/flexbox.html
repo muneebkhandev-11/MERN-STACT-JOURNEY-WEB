@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid; 
+            height: 50vh;
+
+
+
+        }
+
+        .child{
+            width: 100px;
+            height: 100px;
+            border:1px solid;
+
+        }
+        /* flex_grow ,flex_shrink,aling_self,flex-basis ,and order is used in child not in parent */
+        .child_2{
+            /* flex-grow: 2; */
+            flex-shrink: 1;
+        }
+        .child_3{
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            align-self: center;
+            /* align-self: flex-end; */
+
+        }
+        .child_4{
+            /* order: 2; */
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child child_1">1</div>
+        <div class="child child_2">2</div>
+        <div class="child child_3">3</div>
+        <div class="child child_4">4</div>
+        <div class="child child_5">5</div>
+    </div>
+</body>
+</html>
