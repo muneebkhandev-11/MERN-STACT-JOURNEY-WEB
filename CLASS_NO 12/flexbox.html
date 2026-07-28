@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX</title>
+    <style>
+      /* ""  */
+
+      /* FLEX BOX  */
+      /* Display : flex => use in parent element  */
+      /* flex-direction : Row :work with x-axis  */
+      /* flexdirection :row (dafault)|row reverse |row | coloum reverse |coloum*/
+
+      /* "" */
+      .container {
+        border: 1px solid;
+        width: 80vw;
+        height: 90vh;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        /* flex wrap use hota hai jab hum chahte hai ki humare content wrap ho jaye aur next line me chale jaye. */
+
+        /* flex-wrap: nowrap; ( by dafault nowrap) */
+        flex-wrap: wrap;
+        /* align-content: start; */
+        justify-content: space-between;
+
+        /* "" */
+
+        /* JUSTIFY  ( use for horizentaly alignment if fles-direction is row) */
+
+        /* justify-content: flex-start; */
+        /* justify-content: end; */
+        /* justify-content: centers; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* flex direction  (use for direction of cotent*/
+
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+
+        /* ALIGN ITEM (only three property uses)  */
+
+        /* align-items: start; */
+        /* align-items: center; */
+        /* align-items: end; */
+
+        /* "" */
+
+        /* flex-direction : colum :work with y-axis  */
+
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: start; */
+        /* justify-content: end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* "" */
+        /* Align item verticaly */
+
+        /* align-items: start; */
+        /* align-items: end; */
+        /* align-items: center; */
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+      .child_3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child child_1">1</div>
+      <div class="child child_2">2</div>
+      <div class="child child_3">3</div>
+      <div class="child child_4">4</div>
+      <!-- <div class="child child_1">1</div>
+      <div class="child child_2">2</div>
+      <div class="child child_3">3</div>
+      <div class="child child_4">4</div>
+      <div class="child child_1">1</div>
+      <div class="child child_2">2</div>
+      <div class="child child_3">3</div>
+      <div class="child child_4">4</div> -->
+    </div>
+  </body>
+</html>
