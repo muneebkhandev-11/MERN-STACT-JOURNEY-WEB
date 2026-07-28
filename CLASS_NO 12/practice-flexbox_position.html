@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice OF position and flaxbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+
+      body {
+        background-color: rgb(23, 23, 23);
+        background-image: url(../Assignment_Of_Css/wall\ paper.jpg);
+        background-blend-mode: exclusion;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        border: 1px solid;
+        width: 100vw;
+        height: 100px;
+        gap: 13px;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(31, 1, 58);
+        border-radius: 0px 0px 12px 12px;
+        position: relative;
+        margin-top: 0px;
+        border: transparent;
+        transition: 0.5s ease;
+      }
+      .child_container {
+        display: flex;
+        border: 1px solid;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 20px;
+        font-weight: bold;
+        padding: 15px;
+        background-color: antiquewhite;
+        color: antiquewhite;
+        border-radius: 10px;
+        transition: 0.4s ease;
+      }
+      .profile {
+        border: 2px solid white;
+        height: 130px;
+        width: 130px;
+        background-color: antiquewhite;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        top: 100px;
+        left: 45%;
+        background-image: url(../Assignment_Of_Css/profile_image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 1px 1px 10px rgba(8, 4, 4, 0.3);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .text {
+        position: absolute;
+        top: 230px;
+        left: 38%;
+        padding: 10px;
+      }
+      h1 {
+        color: black;
+      }
+
+      .child_container:hover {
+        display: inline-block;
+        background-color: chocolate;
+        color: cyan;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px black;
+        border: transparent;
+      }
+      .container:hover {
+        background-color: transparent;
+      }
+      .icon {
+        display: flex;
+        position: fixed;
+        top: 90%;
+        right: 25px;
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        background-image: url(../Assignment_Of_Css/Urban_T-shirt.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s ease;
+      }
+      .icon:hover {
+        box-shadow: 1px 1px 8px white;
+      }
+      .home {
+        height: fit-content;
+        width: 50vw;
+        display: flex;
+        position: absolute;
+        top: 55%;
+        left: 27%;
+        border: 1px solid;
+        border: transparent;
+        text-align: justify;
+        padding: 15px;
+        border-radius: 10px;
+        word-spacing: 1px;
+        line-height: 25px;
+        background-color: rgb(31, 1, 58);
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="full_cont">
+          <div class="container">
+            <div class="child_container">
+              <a href="#HOME" id="icon">HOME</a>
+            </div>
+            <div class="child_container">
+              <a href="#ABOUT">ABOUT</a>
+            </div>
+            <div class="child_container">
+              <a href="#PROJECT">PROJECT</a>
+            </div>
+            <div class="child_container">
+              <a href="#CONTACT">CONTACT</a>
+            </div>
+          </div>
+          <div class="profile"></div>
+
+          <div class="text">
+            <h1>MUNEEB KHAN DEV</h1>
+            <p style="color: black; font-weight: bold">
+              ASPIRING MERN STACK DEVELOPER
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="HOME">
+      <main>
+        <div class="home">
+          <p>
+            Hi, I'm MUNEEB KHAN, an aspiring MERN Stack Developer dedicated to
+            building modern, responsive, and user-focused web applications. My
+            journey into web development began with HTML and CSS, where I
+            discovered how creativity and technology come together to create
+            meaningful digital experiences. Since then, I have committed myself
+            to continuous learning, transforming curiosity into practical skills
+            through hands-on projects and consistent practice.
+          </p>
+        </div>
+      </main>
+    </section>
+    <section id="ABOUT">
+      <main>
+        <div class="home">
+          <p></p>
+        </div>
+      </main>
+    </section>
+    <div class="icon"><a href="#icone"></a></div>
+  </body>
+</html>
