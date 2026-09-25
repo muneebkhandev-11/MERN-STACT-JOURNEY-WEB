@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1{
+        /* display: inline; */
+        text-align: center;
+        margin-top: 0%;
+        padding-top: 0%;
+        
+      }
+      form {
+        border: 1px solid;
+        width: 30%;
+        margin: auto;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px;
+        margin-top: 60px;
+      }
+      .input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      label {
+        display: block;
+        padding: 0%;
+        margin: 3px;
+      }
+      #Login {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        margin-top: 12px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      .group {
+        margin-bottom: 10px;
+      }
+      #Login:hover{
+        background-color: blue;
+        cursor: pointer;
+        
+      }
+      .input:focus{
+        outline:none;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+  
+      <div class="group">
+        <h1>Login In To Form</h1>
+        <label for="">Email:</label>
+        <input class="input" placeholder="enter your email..." />
+      </div>
+      <div>
+        <label for="">Password:</label>
+        <input type="password" name="" id="" class="input">
+      </div>
+      <input type="submit" name="" id="Login" value="Login" />
+    </form>
+  </body>
+</html>
