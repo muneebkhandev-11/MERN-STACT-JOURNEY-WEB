@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Netflix Pakistan - Watch TV Shows and Movies</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* =========================
+         TOP OFFER BAR
+      ========================= */
+
+      .container {
+        width: 100%;
+        min-height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        padding: 10px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 10;
+
+        background: linear-gradient(45deg, #8739af, #a73187, #d7264c, #fc1e1f);
+
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* =========================
+         NAVBAR
+      ========================= */
+
+      header {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 5;
+      }
+
+      .picture {
+        width: 100%;
+        min-height: 70px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 5px 15px;
+        margin-left: 5px;
+        background-image: url("download.png");
+        background-repeat: no-repeat;
+        background-size: 110px;
+        background-position: left center;
+      }
+
+      .picture input {
+        margin-left: auto;
+      }
+
+      /* =========================
+         SIGN IN
+      ========================= */
+
+      .signin {
+        padding: 8px 14px;
+
+        font-weight: bold;
+
+        background-color: #fc1e1f;
+
+        color: white;
+
+        border: none;
+        border-radius: 5px;
+
+        cursor: pointer;
+      }
+
+      /* =========================
+         HERO SECTION
+      ========================= */
+
+      .pic {
+        width: 100%;
+        min-height: 650px;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url("theater-pic.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* Dark overlay */
+
+      .pic::before {
+        content: "";
+
+        position: absolute;
+
+        inset: 0;
+
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      /* =========================
+         HERO CONTENT
+      ========================= */
+
+      .body {
+        width: 100%;
+
+        position: absolute;
+
+        top: 150px;
+        left: 0;
+
+        z-index: 2;
+
+        text-align: center;
+
+        padding: 20px 15px;
+      }
+
+      .body h1 {
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        font-size: 32px;
+
+        line-height: 1.2;
+      }
+
+      .body h2 {
+        margin-top: 20px;
+
+        font-size: 19px;
+
+        font-weight: normal;
+      }
+
+      .body p {
+        max-width: 600px;
+
+        margin: 20px auto 10px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+      }
+
+      .email-box {
+        width: 100%;
+        max-width: 350px;
+
+        padding: 12px;
+
+        color: white;
+
+        background-color: rgba(0, 0, 0, 0.6);
+
+        border: 1px solid #aaa;
+
+        border-radius: 5px;
+
+        outline: none;
+      }
+
+      .email-box::placeholder {
+        color: #ccc;
+      }
+
+      .try-button {
+        margin-top: 10px;
+
+        padding: 12px 18px;
+
+        font-weight: bold;
+
+        background-color: #fc1e1f;
+
+        color: white;
+
+        border: none;
+
+        border-radius: 5px;
+
+        cursor: pointer;
+      }
+
+      .body span {
+        display: block;
+
+        margin-top: 10px;
+
+        color: #aaa;
+
+        font-size: 13px;
+      }
+
+      /* =========================
+         CONTENT SECTION
+      ========================= */
+
+      .content {
+        width: 100%;
+
+        min-height: 600px;
+
+        background-color: black;
+
+        padding: 30px 15px;
+      }
+
+      .content h1 {
+        font-size: 25px;
+
+        margin-bottom: 20px;
+      }
+
+      /*MOVIES*/
+
+      .movies {
+        width: 100%;
+
+        display: flex;
+
+        gap: 15px;
+
+        overflow-x: auto;
+
+        padding-bottom: 15px;
+      }
+
+      .movies::-webkit-scrollbar {
+        height: 5px;
+      }
+
+      .movies::-webkit-scrollbar-thumb {
+        background-color: #555;
+
+        border-radius: 10px;
+      }
+
+      .movie {
+        min-width: 140px;
+
+        flex-shrink: 0;
+      }
+
+      .movie img {
+        width: 140px;
+
+        height: 190px;
+
+        object-fit: cover;
+
+        border-radius: 6px;
+
+        display: block;
+      }
+
+      /*MORE REASON SECTION*/
+
+      .more-reason {
+        margin-top: 35px;
+      }
+
+      .more-reason h2 {
+        font-size: 24px;
+
+        margin-bottom: 20px;
+      }
+
+      .reason-boxes {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+      }
+
+      .reason-box {
+        min-height: 150px;
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        background: linear-gradient(135deg, #1c1c1c, #2d1d30);
+
+        border: 1px solid #333;
+      }
+
+      .reason-box h3 {
+        font-size: 18px;
+
+        margin-bottom: 10px;
+      }
+
+      .reason-box p {
+        color: #aaa;
+
+        font-size: 14px;
+
+        line-height: 1.5;
+      }
+
+      /*MOBILE*/
+
+      @media (max-width: 600px) {
+        .container {
+          font-size: 13px;
+          min-height: 45px;
+        }
+
+        header {
+          top: 45px;
+        }
+
+        .picture {
+          min-height: 65px;
+
+          background-size: 95px;
+
+          padding: 5px 12px;
+        }
+
+        .signin {
+          padding: 7px 12px;
+
+          font-size: 13px;
+        }
+
+        .pic {
+          min-height: 620px;
+
+          background-position: center;
+        }
+
+        .body {
+          top: 140px;
+
+          padding: 20px;
+        }
+
+        .body h1 {
+          font-size: 27px;
+        }
+
+        .body h2 {
+          font-size: 17px;
+        }
+
+        .body p {
+          font-size: 15px;
+        }
+
+        .email-box {
+          max-width: 100%;
+
+          margin-top: 5px;
+        }
+
+        .try-button {
+          width: 100%;
+
+          max-width: 250px;
+        }
+
+        .content {
+          padding: 25px 15px;
+        }
+
+        .content h1 {
+          font-size: 23px;
+        }
+
+        .movie img {
+          width: 125px;
+
+          height: 175px;
+        }
+
+        .more-reason h2 {
+          font-size: 21px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--TOP OFFER-->
+
+    <div class="container">
+      <i class="fa-solid fa-gift"></i>
+
+      <span style="padding: 0; color: white">
+        New to Netflix? Try 30 days for Rs 0.
+      </span>
+    </div>
+
+    <!-- HEADER-->
+
+    <header>
+      <nav>
+        <div class="picture">
+          <input class="signin" type="submit" value="Sign in" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- 
+         HERO IMAGE
+     -->
+
+    <div class="pic"></div>
+
+    <!-- 
+         HERO TEXT
+    -->
+
+    <div class="body">
+      <h1>Unlimited movies, TV shows, and more</h1>
+
+      <h2>Plans start at Rs 250. Cancel anytime.</h2>
+
+      <p>Ready to watch? Enter your email to start your membership.</p>
+
+      <input
+        class="email-box"
+        type="email"
+        placeholder="Email address..."
+        required
+      />
+
+      <br />
+
+      <button class="try-button">Try 30 Days for Rs 0</button>
+
+      <span> New members only. Terms below. </span>
+    </div>
+
+    <!-- =========================
+         CONTENT
+    ========================= -->
+
+    <section class="content">
+      <h1>Trending Now</h1>
+
+      <!-- MOVIES -->
+
+      <div class="movies">
+        <div class="movie">
+          <img src="dress.png" alt="Movie 1" />
+        </div>
+
+        <div class="movie">
+          <img src="Polo T-shirt.png" alt="Movie 2" />
+        </div>
+
+        <div class="movie">
+          <img src="dress.png" alt="Movie 3" />
+        </div>
+
+        <div class="movie">
+          <img src="Polo T-shirt.png" alt="Movie 4" />
+        </div>
+      </div>
+
+      <!-- MORE REASON -->
+
+      <div class="more-reason">
+        <h2>More Reasons to Join</h2>
+
+        <div class="reason-boxes">
+          <div class="reason-box">
+            <h3>Enjoy on your TV</h3>
+
+            <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast and more.</p>
+          </div>
+
+          <div class="reason-box">
+            <h3>Watch Everywhere</h3>
+
+            <p>
+              Stream unlimited movies and TV shows on your phone, tablet and
+              laptop.
+            </p>
+          </div>
+
+          <div class="reason-box">
+            <h3>Download Your Shows</h3>
+
+            <p>Save your favorite movies and shows to watch offline.</p>
+          </div>
+
+          <div class="reason-box">
+            <h3>Create Profiles</h3>
+
+            <p>Create profiles for different members of your family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+/* Custom Breakpoints Media Queries*/
+
+/* 1. Mobile S (320px – 375px) */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .Netflex-banner {
+    font-size: 12px;
+    height: 40px;
+  }
+  .logo-sign {
+    top: 40px;
+    height: 45px;
+  }
+  .hero-text {
+    top: 95px;
+    padding: 0 8px;
+  }
+  .hero-text h1 {
+    font-size: 18px;
+  }
+  .hero-text h2 {
+    font-size: 14px;
+  }
+  .hero-text p {
+    font-size: 12px;
+  }
+  #email,
+  button {
+    width: 95%;
+  }
+  .movies-pictures img {
+    width: 100px;
+    height: 140px;
+  }
+  .contact-us {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2. Mobile M (375px – 425px) */
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .Netflex-banner {
+    font-size: 13px;
+    height: 45px;
+  }
+  .logo-sign {
+    top: 45px;
+    height: 50px;
+  }
+  .hero-text {
+    top: 105px;
+    padding: 0 10px;
+  }
+  .hero-text h1 {
+    font-size: 22px;
+  }
+  .hero-text h2 {
+    font-size: 16px;
+  }
+  #email,
+  button {
+    width: 90%;
+  }
+  .movies-pictures img {
+    width: 120px;
+    height: 170px;
+  }
+  .contact-us {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 3. Mobile L (425px – 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .hero-text {
+    top: 120px;
+  }
+  .hero-text h1 {
+    font-size: 26px;
+  }
+  .hero-text h2 {
+    font-size: 18px;
+  }
+  #email {
+    width: 70%;
+  }
+  button {
+    width: auto;
+  }
+  .movies-pictures img {
+    width: 135px;
+    height: 190px;
+  }
+  .contact-us {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-sign input {
+    border: transparent;
+    width: auto;
+    padding: 7px 12px;
+    font-weight: bold;
+    background-color: #fc1e1f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+/* 4. Tablet (768px – 1023px) */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-text {
+    top: 289px;
+  }
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text h2 {
+    font-size: 32px;
+  }
+  .hero-text p {
+    font-size: 25px;
+    padding: 7px;
+  }
+  #email {
+    width: 350px;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 18;
+  }
+  .trending h1 {
+    font-size: 44px;
+  }
+  .logo-sign input {
+    font-size: 20px;
+    padding: 12px;
+    margin-right: 15px;
+    margin-top: 0px;
+    transition: 0.3s ease;
+    border-radius: 8px;
+  }
+  .logo-sign input:hover {
+    transform: scaleX(1.1);
+  }
+  .logo-sign {
+    top: 55px;
+    height: 100px;
+    padding-right: 25px;
+    margin-left: 8px;
+  }
+  button {
+    padding: 16px 25px;
+    margin-top: 20px;
+    margin-left: 287px;
+    font-size: 17px;
+    display: block;
+  }
+  span {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .Netflex-banner {
+    height: 70px;
+    padding: 12px;
+    font-size: 22px;
+    width: 100%;
+  }
+  .movies-pictures img {
+    width: 170px;
+    height: 230px;
+  }
+  .contact-us {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .faq-question {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .Reason {
+    font-size: 30px;
+    left: 0px;
+    margin-left: 90px;
+  }
+  /* faq question / answer about netfex  */
+  .faq-question {
+    padding: 40px;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 16px;
+  }
+  .faq-question i {
+    font-size: 20px;
+  }
+  .faq-question details {
+    padding: 30px;
+    font-size: 19px;
+  }
+  .faq-question summary {
+    font-size: 24px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .contact-us {
+    position: relative;
+    top: 50px;
+    margin-left: 25px;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  footer p {
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  .contact-us a {
+    padding: 10px;
+  }
+  .line {
+    width: 95%;
+    margin: 10px;
+    margin-right: 9px;
+  }
+  .second-line {
+    width: 95%;
+    margin: 20px;
+  }
+  .social-icons {
+    gap: 20px;
+  }
+  .social-icons a {
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  .social-icons li {
+    gap: 7px; /* icon aur naam ke darmiyan distance */
+  }
+}
+
+/* 5. Laptop (1025px – 1439px) */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .hero-text {
+    top: 890px;
+  }
+  .hero-text h1 {
+    font-size: 100px;
+  }
+  .hero-text h2 {
+    font-size: 44px;
+  }
+  .hero-text p {
+    font-size: 30px;
+    padding: 10px;
+  }
+  #email {
+    width: 421px;
+    margin-top: 2px;
+    padding: 25px;
+    font-weight: bolder;
+    font-size: 26px;
+  }
+  .trending h1 {
+    font-size: 73px;
+    padding: 30px;
+  }
+  .logo-sign input {
+    font-size: 30px;
+    padding: 30px;
+    margin-right: 19px;
+    margin-top: 0px;
+    transition: 0.3s ease;
+    border-radius: 8px;
+  }
+  .logo-sign input:hover {
+    transform: scaleX(1.1);
+  }
+  .logo-sign {
+    top: 65px;
+    height: 150px;
+    padding-right: 25px;
+    margin-left: 8px;
+  }
+  button {
+    padding: 25px 34px;
+    margin-top: 21px;
+    margin-left: 367px;
+    font-size: 21px;
+    display: block;
+  }
+  span {
+    padding: 24px;
+    font-size: 30px;
+  }
+  .Netflex-banner {
+    height: 92px;
+    padding: 14px;
+    font-size: 32px;
+    width: 100%;
+  }
+  .movies-pictures img {
+    width: 240px;
+    height: 380px;
+    gap: 30px;
+    margin-left: 25px;
+  }
+  .contact-us {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .faq-question {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .Reason {
+    font-size: 47px;
+    left: 0px;
+    margin-left: 90px;
+  }
+
+  .faq-question {
+    padding: 70px;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 16px;
+  }
+  .faq-question i {
+    font-size: 30px;
+  }
+  .faq-question details {
+    padding: 30px;
+    font-size: 29px;
+  }
+  .faq-question summary {
+    font-size: 34px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .contact-us {
+    position: relative;
+    top: 50px;
+    margin-left: 25px;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  footer p {
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .contact-us a {
+    padding: 10px;
+  }
+  .line {
+    width: 95%;
+    margin: 10px;
+    margin-right: 9px;
+  }
+  .second-line {
+    width: 95%;
+    margin: 20px;
+  }
+  .social-icons {
+    gap: 16px;
+  }
+  .social-icons a {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .social-icons li {
+    gap: 5px; /* icon aur naam ke darmiyan distance */
+  }
+}
+
+/* 6. Laptop L (1440px – 2559px) */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .hero-text {
+    top: 450px;
+  }
+  .hero-text h1 {
+    font-size: 68px;
+  }
+  .hero-text h2 {
+    font-size: 50px;
+  }
+  .hero-text p {
+    font-size: 36px;
+    padding: 18px;
+  }
+  #email {
+    width: 600px;
+    margin-top: 2px;
+    padding: 32px;
+    font-weight: bolder;
+    font-size: 28px;
+  }
+  .trending h1 {
+    font-size: 76px;
+    padding: 30px;
+  }
+  .logo-sign input {
+    font-size: 30px;
+    padding: 20px;
+    margin-right: 35px;
+    margin-top: 0px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .logo-sign input:hover {
+    transform: scaleX(1.1);
+  }
+  .logo-sign {
+    top: 75px;
+    height: 180px;
+    padding-right: 25px;
+    margin-left: 8px;
+  }
+  button {
+    padding: 30px 33px;
+    margin-top: 21px;
+    margin-left: 367px;
+    font-size: 21px;
+    display: block;
+  }
+  span {
+    padding: 23px;
+    font-size: 30px;
+  }
+  .Netflex-banner {
+    height: 92px;
+    padding: 15px;
+    font-size: 32px;
+    width: 100%;
+  }
+  .movies-pictures img {
+    width: 240px;
+    height: 380px;
+    gap: 30px;
+    margin-left: 25px;
+  }
+  .contact-us {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .faq-question {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .Reason {
+    font-size: 47px;
+    left: 0px;
+    margin-left: 90px;
+  }
+
+  .faq-question {
+    padding: 70px;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 16px;
+  }
+  .faq-question i {
+    font-size: 30px;
+  }
+  .faq-question details {
+    padding: 30px;
+    font-size: 29px;
+  }
+  .faq-question summary {
+    font-size: 33px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .contact-us {
+    position: relative;
+    top: 50px;
+    margin-left: 25px;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  footer p {
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .contact-us a {
+    padding: 10px;
+  }
+  .line {
+    width: 95%;
+    margin: 10px;
+    margin-right: 9px;
+  }
+  .second-line {
+    width: 95%;
+    margin: 20px;
+  }
+  .social-icons {
+    gap: 16px;
+  }
+  .social-icons a {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .social-icons li {
+    gap: 5px; /* icon aur naam ke darmiyan distance */
+  }
+}
