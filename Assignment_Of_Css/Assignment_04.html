@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflex Pakistan - Watch TV show and Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0%;
+        background-color:black;
+        color: white;
+      }
+
+      .container {
+        display: flex;
+        border: transparent;
+        width: 100%;
+        height: 50px;
+        margin: 0%;
+        padding: 4%;
+        position: fixed;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: linear-gradient(45deg, #8739af, #a73187, #d7264c, #fc1e1f);
+        color: white;
+        font-size: 16px;
+        gap: 10px;
+        /* border-radius: 4px; */
+        z-index: 2;
+      }
+      .pic {
+        display: flex;
+        width: 100%;
+        height: 95vh;
+        border: transparent;
+        background-image: url("theater-pic.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: 0.9; */
+      }
+      .pic::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .picture {
+        position: absolute;
+        top: 45px;
+        margin-left: 6px;
+        background-image: url("download.png");
+        height: 60px;
+        width: 100%;
+        border: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        z-index: 1;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 15px;
+      }
+      input {
+        width: auto;
+        padding: 7px 12px;
+        font-weight: bold;
+        background-color: #fc1e1f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+      .body {
+        position: absolute;
+        top: 130px;
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+      .body h1 {
+        font-size: 26px;
+        padding: 8px;
+      }
+
+      .body h2 {
+        font-size: 19px;
+        padding: 6px;
+      }
+
+      .body p {
+        font-size: 17px;
+        display: block;
+        padding: 7px;
+      }
+      span {
+        display: block;
+        padding: 10px;
+        color: gray;
+      }
+      button {
+        /* display: flex; */
+        padding: 5px;
+        margin-top: 5px;
+        width: auto;
+        padding: 10px 15px;
+        font-weight: bold;
+        background-color: #fc1e1f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #input {
+        border: 1px solid;
+        /* padding: 5px; */
+      }
+      .content {
+        display: flex;
+        position: absolute;
+
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid;
+        border-radius: 30px 0px 0px 0px red;
+      }
+      li {
+        display: flex;
+        list-style: none;
+        position: absolute;
+        top: 13%;
+        left: 8%;
+      }
+      img {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .second-pic {
+        position: absolute;
+        top: 13%;
+        right: 8%;
+      }
+      div h1 {
+        font-size: 26px;
+        padding: 3px;
+        margin: 8px 0 0 8px;
+      }
+      div h2 {
+        position: absolute;
+        top: 40%;
+        right: 14%;
+      }
+      .con-grid {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        border: 1px solid;
+        width: 100vh;
+        height: 90vh;
+      }
+      .grid-item {
+        border: 1px solid;
+        width: 50vh;
+        height: 50vh;
+        /* grid-template-columns: repeat(1, ); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <i class="fa-solid fa-gift"></i> New to Netflix? Try 30 days for Rs 0.
+    </div>
+    <header>
+      <nav>
+        <div class="picture">
+          <input type="submit" name="" id="" value="Sign in" />
+        </div>
+      </nav>
+    </header>
+    <div class="pic"></div>
+
+    <div class="body">
+      <h1>Unlimited movies, TV shows, and more</h1>
+
+      <h2>Plans start at Rs 250. Cancel anytime.</h2>
+
+      <p>Ready to watch? Enter your email to start your membership.</p>
+
+      <input
+        style="background-color: transparent"
+        id="input"
+        margin-top="5px"
+        margin-bottom="5px"
+        type="email"
+        placeholder="Email address..."
+        required
+      />
+
+      <button>Try 30 Days for Rs 0</button>
+
+      <span>New members only. Terms below.</span>
+    </div>
+    <div class="content">
+      <h1>Trending Now</h1>
+      <div class="movies">
+        <li><img src="dress.png" alt="" /></li>
+        <img class="second-pic" src="Polo T-shirt.png" alt="" />
+        <h2>More Reason To Jion</h2>
+      </div>
+      <div class="con-grid">
+        <div class="grid-item item_1"></div>
+        <div class="grid-item item_2"></div>
+        <div class="grid-item item_3"></div>
+        <div class="grid-item item_4"></div>
+      </div>
+    </div>
+  </body>
+</html>
