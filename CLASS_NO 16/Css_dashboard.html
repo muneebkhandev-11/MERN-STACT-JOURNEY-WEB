@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 1px solid;
+        display: flex;
+        justify-content: space-around;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        padding: 30px;
+        /* justify-content: space-around; */
+      }
+      li > a {
+        text-decoration: none;
+      }
+      /* .picture {
+       
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../Assignment_Of_Css/profile_image.png);
+      } */
+       .aside{
+        /* display: grid; */
+        display: block;
+        justify-self: start;
+        border: 1px solid;
+        width: 30vh;
+        height: 100vh;
+
+        grid-template: repeat(1,1fr)/repeat(3,1fr);
+
+
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- <div class="picture"></div> -->
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="aside">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

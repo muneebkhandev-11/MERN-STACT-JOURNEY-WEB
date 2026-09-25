@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice</title>
+    <style>
+      .container {
+        display: grid;
+        border: transparent;
+        height: 86vh;
+        width: 95vh;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 180px);
+        gap: 20px;
+      }
+      .child-item {
+        background: lightblue;
+        border: 2px solid royalblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+      .child-item_5 {
+        grid-column: 2/4; /* Column 2 se 3 tak */
+        grid-row: 2/5; /* Row 2 se 4 tak */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child-item child-item_1">1</div>
+      <div class="child-item child-item_2">2</div>
+      <div class="child-item child-item_3">3</div>
+      <div class="child-item child-item_4">4</div>
+      <div class="child-item child-item_5">5</div>
+      <div class="child-item child-item_6">6</div>
+      <div class="child-item child-item_7">7</div>
+    </div>
+  </body>
+</html>
